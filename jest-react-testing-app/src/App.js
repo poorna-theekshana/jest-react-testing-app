@@ -5,6 +5,11 @@ const STATUS = {
   NORMAL: "normal",
 };
 
+const fetchData = () => {
+  // Simulate fetching data, for testing purposes
+  return Promise.resolve({ data: "mocked data" });
+};
+
 export default function App() {
   const [status, setStatus] = useState(STATUS.NORMAL);
 
@@ -26,3 +31,5 @@ export default function App() {
     </div>
   );
 }
+
+export { fetchData };
